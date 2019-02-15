@@ -6,7 +6,7 @@ tags: git
 mathjax: false
 ---
 
-So, when working with Git you will inevitably run into the topic of "conflicts" at some point. You'll find information of how to resolve them all over the place [[1](https://stackoverflow.com/q/161813), [2](https://gist.github.com/karenyyng/f19ff75c60f18b4b8149)]. However, I want to quickly point out two different ways for the conflict resolution under a "special" aspect: Commit history. Do you and your co-developers want to see in your commit history that there was a conflict that needed resolution? `git merge` will show it; and `git rebase` will hide it [[3](https://stackoverflow.com/a/44476803)].
+When working with Git you will inevitably run into the topic of "conflicts" at some point. You'll find information of how to resolve them all over the place [[1](https://stackoverflow.com/q/161813), [2](https://gist.github.com/karenyyng/f19ff75c60f18b4b8149)]. However, I want to quickly point out two different ways for the conflict resolution under a "special" aspect: Commit history. Do you and your co-developers want to see in your commit history that there was a conflict that needed resolution? `git merge` will show it; and `git rebase` will hide it [[3](https://stackoverflow.com/a/44476803)].
 
 ## Resolving Conflicts
 
@@ -20,7 +20,7 @@ A-B-C-D <-- origin/master
 
 The command sequence for handling the conflict with `merge` would be:
 
-```bash
+```shell
 git fetch origin master;
 //will "fail", because of conflict
 git merge master;
@@ -31,7 +31,7 @@ git merge --continue;
 ```
 
 And with `rebase` this is very similar:
-```bash
+```shell
 git fetch origin master;
 //will "fail", because of conflict
 git rebase master;
@@ -46,7 +46,7 @@ The real difference is what is happening behind the scenes.
 ## The `merge` History
 
 Because we cannot do a fast forward of our commit pointer we end up with `merge` with an explicit _merge commit_. So the commit history will look like this after the conflict:
-```text
+```
 A-B-C-D <-- origin/master
     \ \
      \ ---F <-- master
