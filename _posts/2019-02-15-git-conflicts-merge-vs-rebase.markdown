@@ -20,7 +20,7 @@ A-B-C-D <-- origin/master
 
 The command sequence for handling the conflict with `merge` would be:
 
-```shell
+```
 git fetch origin master;
 //will "fail", because of conflict
 git merge master;
@@ -31,7 +31,7 @@ git merge --continue;
 ```
 
 And with `rebase` this is very similar:
-```shell
+```
 git fetch origin master;
 //will "fail", because of conflict
 git rebase master;
@@ -45,7 +45,7 @@ The real difference is what is happening behind the scenes.
 
 ## The `merge` History
 
-Because we cannot do a fast forward of our commit pointer we end up with `merge` with an explicit _merge commit_. So the commit history will look like this after the conflict:
+Because we cannot do a fast forward we end up with an explicit _merge commit_. So the commit history will look like this after the conflict:
 ```
 A-B-C-D <-- origin/master
     \ \
@@ -69,4 +69,4 @@ The conflict is completely hidden from the history. It seems as if the change wa
 
 ## Which to use?
 
-Which method is used depends on you and your colleges. Do you generally want to see or hide your conflicts? Or do you want to work on a "per case" basis - i.e. don't hide complex conflicts and hide the trivial ones?
+Which method is used depends on you and your colleges. Do you generally want to see or hide your conflicts? Or do you want to work on a "per case" basis - i.e. don't hide complex conflicts and hide the trivial ones? However, my personal recommendation is that, for resolving conflicts (and even applying importing any change) in the master branch or a main version branch, always use non-fast-forward merges.
