@@ -23,6 +23,10 @@
         >article {
             hyphens: auto;
             text-align: justify;
+            div.highlight {
+                line-height: 1.1;
+                text-align: left;
+            }
         }
         >h1 {
             margin-bottom: -10px;
@@ -74,7 +78,6 @@
                         color: #c6cbe9;
                     }
                     a {
-
                         // border: 1px solid #aaa;
                         padding: 0 5px;
                         background-color: #c6cbe9;
@@ -160,6 +163,14 @@
             float: left;
             padding: 10px 14px;
             font-size: 14px;
+            >article {
+                hyphens: auto;
+                text-align: justify;
+                div.highlight {
+                    line-height: 1.1;
+                    text-align: left;
+                }
+            }
             >h1 {
                 font-size: 25px;
                 margin-bottom: -10px;
@@ -189,10 +200,6 @@
                     }
                 }
             }
-	    div.highlight {
-		    line-height: 1.1;
-		    text-align: left;
-	    }
         }
         .anchor {
             display: block;
