@@ -69,4 +69,4 @@ The conflict is completely hidden from the history. It seems as if the change wa
 
 ## Which to use?
 
-Which method is used depends on you and your colleges. Do you generally want to see or hide your conflicts? Or do you want to work on a "per case" basis - i.e. don't hide complex conflicts and hide the trivial ones? However, my personal recommendation is that, for resolving conflicts (and even applying importing any change) in the master branch or a main version branch, always use non-fast-forward merges.
+Which method is used depends on you and your co-developers. Do you generally want to see or hide your conflicts? Or do you want to work on a "per case" basis - i.e. don't hide complex conflicts and hide the trivial ones? However, my personal recommendation is that, for resolving conflicts (and even importing any change) in the master branch or a main version branch, always use non-fast-forward merges.
