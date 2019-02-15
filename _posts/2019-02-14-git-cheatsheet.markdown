@@ -3,7 +3,7 @@ layout: post
 title:  Git Basic Command Cheatsheet
 date:   2019-02-14 14:15:00
 tags: git cheatsheet
-excerpt: A small overview of basic Git commands.
+short_description: A small overview of basic Git commands.
 mathjax: false
 ---
 
