@@ -2,7 +2,7 @@
 layout: post
 title:  Git Commit History and Resolving Conflicts
 date:   2019-02-15 12:21:00
-tags: git cheatsheet
+tags: git
 mathjax: false
 ---
 
