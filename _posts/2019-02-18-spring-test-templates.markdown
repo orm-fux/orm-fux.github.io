@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Templates for Spring Tests
-date:   2019-02-18 14:30:00
+title: Templates for Spring Tests
+date: 2019-02-18 14:30:00
 tags: java spring testing template
 short_description: These are a few templates for test setups involving Spring (Boot). Because: Who wants to remember that stuff when setting up a new project? 
 mathjax: false
@@ -42,7 +42,6 @@ targetCompatibility = '1.8'
 springBoot {
     mainClassName = 'org.springbootsample.Application'
 }
-
 ```
 
 # Templates
@@ -135,6 +134,7 @@ public class RestTest {
         //test more stuff
     }
 }
+```
 
 ## Integration Test
 
