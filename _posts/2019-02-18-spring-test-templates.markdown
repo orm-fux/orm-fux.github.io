@@ -11,7 +11,7 @@ These are a few templates for test setups involving Spring (Boot). Because: Who 
 
 For a demonstration you can refer to this Spring Developer Talk: [Test Driven Development with Spring Boot](https://www.youtube.com/watch?v=s9vt6UJiHg4) ([Git repository 1](https://github.com/mbhave/tdd-with-spring-boot), [Git repository 2](https://github.com/sannidhi/tdd-boot-demo﻿)).
 
-# Gradle Project Setup
+## Gradle Project Setup
 
 ```groovy
 plugins {
@@ -44,9 +44,9 @@ springBoot {
 }
 ```
 
-# Templates
+## Templates
 
-## JPA Test
+### JPA Test
 
 Runs the test within Spring context with in-memory database. Flush entities to better simulate production behavior.
 
@@ -68,7 +68,7 @@ public class JpaTest {
 }
 ```
 
-## Service Test
+### Service Test
 
 No Spring context with this style. Executing tests is fast. Plus, mocks for the related services help focusing on the functionality of the tested service.
 
@@ -98,7 +98,7 @@ public class ServiceTest {
 }
 ```
 
-## REST Test
+### REST Test
 
 Note "controller" definition of `@WebMvcTest`. With this only the listed `@Controller`s will be instantiated by Spring.
 
@@ -136,7 +136,7 @@ public class RestTest {
 }
 ```
 
-## Integration Test
+### Integration Test
 
 ```java
 @RunWith(SpringRunner.class)
