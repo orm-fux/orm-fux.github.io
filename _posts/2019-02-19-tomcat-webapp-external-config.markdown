@@ -12,9 +12,9 @@ Now, one option would be to create dedicated builds of the web application - one
 
 So, our goal is to add the configuration files to the classpath of the web application. The shared version of the application will read the configuration from its classpath. How the configuration is read depends, of course, on your application (Think, for example, of Spring and defining custom XML Spring contexts or loading property files.)
 
-Usually you have global `CATALINA_BASE/conf/context.xml`. There you can define database connections as JNDI resources. But there is also the [`Resources`](https://tomcat.apache.org/tomcat-9.0-doc/config/resources.html) component. This one can be used to add files to the classpath of all the deployed applications of the Tomcat instance. we only need a way to do that per application and not globally. 
+Usually you have global `CATALINA_BASE/conf/context.xml`. There you can define database connections as JNDI resources. But there is also the [Resources](https://tomcat.apache.org/tomcat-9.0-doc/config/resources.html) component. This one can be used to add files to the classpath of all the deployed applications of the Tomcat instance. we only need a way to do that per application and not globally. 
 
-An that's where we can use local context definitions. Have a look at the [`Context`](https://tomcat.apache.org/tomcat-9.0-doc/config/context.html) component documentation: 
+An that's where we can use local context definitions. Have a look at the [Context](https://tomcat.apache.org/tomcat-9.0-doc/config/context.html) component documentation: 
 > Individual Context elements may be explicitly defined:
 >
 > * In an individual file at `/META-INF/context.xml` inside the application files. Optionally (based on the Host's copyXML attribute) this may be copied to `$CATALINA_BASE/conf/[enginename]/[hostname]/` and renamed to application's base file name plus a ".xml" extension.
