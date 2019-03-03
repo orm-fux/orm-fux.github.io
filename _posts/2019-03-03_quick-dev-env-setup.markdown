@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  Quick Development Environment Setup
-date:   2019-03-03 17:45:00
+date:   2019-03-03 07:45:00
 tags: cheatsheet git java gradle maven eclipse 
-short_description: Basic "checklist" for setting up a fresh development environment with Git, Java, Maven, Gradle, and Eclipse.
 mathjax: false
 ---
 
