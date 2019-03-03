@@ -117,7 +117,7 @@ $ source ~/bin/installs/gradle/gradle-completion.bash
 
 ## Eclipse
 
-The tigng is that you can run Eclipse with JDK11. But there are a few issues. For example a number of plugins require JAXB. But JAXB is not part of JDK11 anymore. That is why a explicitly specify in the `eclipse.ini` that Eclispe is to be run with Java 8.
+The thing is that you can run Eclipse with JDK11. But there are a few issues. For example a number of plugins require JAXB. But JAXB is not part of JDK11 anymore. That is why a explicitly specify in the `eclipse.ini` that Eclispe is to be run with Java 8.
 
 ```shell
 $ mkdir -p ~/bin/installs/eclipse
