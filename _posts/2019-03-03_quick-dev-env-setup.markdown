@@ -7,7 +7,7 @@ short_description: Basic "checklist" for setting up a fresh development environm
 mathjax: false
 ---
 
-This is just a small checklist with commands to setup a small development environment. I usually like to setup these "user local" - i.e. the development toolre mostly installed _per user_, so that tools only needed for development are only available for the development user. Other users of the system do not need to be concerned. with that stuff.
+This is just a small checklist with commands to setup a small development environment. I usually like to setup these "user local". I.e. the development tools are mostly installed _per user_, so that tools only needed for development are only available for the development user. Other users of the system do not need to be concerned. with that stuff.
 
 We are going to set up the following tools:
 * Git
