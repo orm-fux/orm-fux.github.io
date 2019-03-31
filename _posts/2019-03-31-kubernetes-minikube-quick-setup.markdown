@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Kubernetes/Minikube Quick Set Up Commands
-date:   2019-03-03 07:45:00
+date:   2019-03-31 07:45:00
 tags: cheatsheet kubernetes minikube
 short_description: Concise listing of command to install and set up Kubernetes/Minikube for local development
 mathjax: false
